@@ -1,11 +1,36 @@
-variable "prefix" {
+variable "public_ip_name" {
   type        = string
-  description = "Resources name prefix"
+  description = "Name of the public IP"
+}
+
+variable "resource_group_name" {
+  type        = string
+  description = "Name of the resource group"
 }
 
 variable "resource_group_location" {
   type        = string
-  description = "Location of the resource group."
+  description = "Location of the resource group"
+}
+
+variable "subnet_id" {
+  type        = string
+  description = "ID of the subnet"
+}
+
+variable "network_interface_name" {
+  type        = string
+  description = "Name of the network interface"
+}
+
+variable "ip_configuration_name" {
+  type        = string
+  description = "Name of the IP configuration"
+}
+
+variable "vm_name" {
+  type        = string
+  description = "Name of the virtual machine"
 }
 
 variable "vm_size" {
@@ -33,6 +58,11 @@ variable "storage_image_reference_version" {
   description = "Specifies the version of the platform image or marketplace image used to create the virtual machine."
 }
 
+variable "storage_os_disk_name" {
+  type        = string
+  description = "The name of the OS disk."
+}
+
 variable "storage_os_disk_caching" {
   type        = string
   description = "Specifies the caching requirements for the OS disk."
@@ -48,6 +78,11 @@ variable "storage_os_disk_managed_disk_type" {
   description = "Specifies the storage account type for the managed disk."
 }
 
+variable "os_profile_computer_name" {
+  type        = string
+  description = "Specifies the host OS name of the virtual machine."
+}
+
 variable "os_profile_admin_username" {
   type        = string
   description = "Specifies the name of the administrator account."
@@ -55,25 +90,15 @@ variable "os_profile_admin_username" {
 
 variable "os_profile_admin_public_key_path" {
   type        = string
-  description = "Specifies the path to the public key file of the administrator account."
+  description = "Specifies the path to the public key file."
 }
 
-variable "storage_account_replication" {
+variable "nsg_name" {
   type        = string
-  description = "Specifies the replication type for this storage account."
-}
-
-variable "storage_account_tier" {
-  type        = string
-  description = "Specifies the tier to use for this storage account."
-}
-
-variable "custom_script_extension_enabled" {
-  type        = bool
-  description = "Specifies whether the extension should be enabled or disabled."
+  description = "Name of the network security group"
 }
 
 variable "image_resource_group_name" {
   type        = string
-  description = "Specifies the name of the resource group that contains the image to use to create the virtual machine."
+  description = "Name of the resource group where the image is located"
 }
