@@ -1,9 +1,6 @@
-# Terraform template
+# Packer Azure Ubuntu Image
 
-Terraform template for modules and sub-modules.
-Includes pre-commit hooks that lint the terraform code and generate module's
-documentation as part of README file.
-Contains examples of terraform CI/CD pipelines for GitHub Actions and Azure Pipelines.
+Packer image for Ubuntu 22.04 in Azure
 
 ## Pre-commit configuration
 
