@@ -2,6 +2,15 @@
 
 Packer image for Ubuntu 22.04 in Azure
 
+Trello task: https://trello.com/c/Es7RkUKe
+
+## Commands
+
+- `az group create --name "rg-packer-ubuntu" --location "northeurope"`
+- `packer init ubuntu2204-v1.pkr.hcl`
+- `packer validate -var-file="ubuntu.variables.json" ubuntu2204-v1.pkr.hcl`
+- `packer build -var-file="ubuntu.variables.json" ubuntu2204-v1.pkr.hcl`
+
 ## Pre-commit configuration
 
 - Install python3 via windows store
