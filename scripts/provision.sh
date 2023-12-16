@@ -62,6 +62,12 @@ sudo apt install -y docker-compose
 
 echo "======================== DOCKER COMPOSE IS INSTALLED ========================"
 
+echo "======================== UNZIP IS STARTED ========================"
+
+sudo apt install unzip -y
+
+echo "======================== UNZIP IS INSTALLED ========================"
+
 echo "======================== NET 6 STARTED ========================"
 
 sudo apt-get update -Y
