@@ -17,7 +17,7 @@ This repository contains a Packer template to build a custom Ubuntu Server image
 - unzip
 - zip
 - tar
-- jo
+- jq
 - htop
 - net-tools
 - software-properties-common
