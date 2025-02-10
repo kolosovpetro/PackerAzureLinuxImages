@@ -34,7 +34,7 @@ module "virtual_machine" {
   ip_configuration_name             = "ipc-ubuntu-${var.prefix}"
   network_interface_name            = "nic-ubuntu-${var.prefix}"
   os_profile_admin_username         = "razumovsky_r"
-  os_profile_admin_public_key_path  = file("${path.root}/id_rsa.pub")
+  os_profile_admin_public_key       = file("${path.root}/id_rsa.pub")
   os_profile_computer_name          = "vm-ubuntu-${var.prefix}"
   public_ip_name                    = "pip-ubuntu-${var.prefix}"
   storage_os_disk_caching           = var.storage_os_disk_caching
