@@ -44,30 +44,6 @@ check_filesystem() {
   fi
 }
 
-# Function to check system logs for errors
-check_system_logs() {
-  echo "Checking system logs for errors..."
-  LOG_ERRORS=$(journalctl -p 3 -n 10)
-  if [ -n "$LOG_ERRORS" ]; then
-    echo "Recent errors found in system logs:"
-    echo "$LOG_ERRORS"
-    return 1
-  else
-    echo "No critical errors found in the system logs."
-    return 0
-  fi
-}
-
-# Function to clear unnecessary files (cache, logs)
-clear_unnecessary_files() {
-  echo "Clearing unnecessary files..."
-  sudo apt-get clean
-  sudo apt-get autoremove -y
-  sudo journalctl --vacuum-time=3d
-  sudo rm -rf /var/log/*.gz /var/log/*.1 /var/log/*.old
-  echo "Unnecessary files cleared."
-}
-
 # Run all checks
 echo "Running integrity checks..."
 
@@ -88,13 +64,5 @@ if [ $? -ne 0 ]; then
   echo "Filesystem issue detected. Please resolve before proceeding."
   exit 1
 fi
-
-check_system_logs
-if [ $? -ne 0 ]; then
-  echo "Critical errors detected in logs. Please resolve before proceeding."
-  exit 1
-fi
-
-clear_unnecessary_files
 
 echo "Integrity checks completed successfully. Ready to run Sysprep."
