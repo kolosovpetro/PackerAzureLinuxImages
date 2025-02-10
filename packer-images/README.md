@@ -19,8 +19,8 @@ This repository contains a Packer template to build a custom Windows Server 2022
 
 - Setup required environment variables
 - .\Packer-Init-Validate.ps1
-- .\Packer-Build.ps1 -PackerImage ".\templates\windows-server-image-v1.pkr.hcl" -VarFile ".\packer.ubuntu2204.pkolosov.vars.json"
-- .\Packer-Build.ps1 -PackerImage ".\templates\windows-server-image-v1.pkr.hcl" -VarFile ".\packer.ubuntu2204.osds.vars.json"
+- .\Packer-Build.ps1 -PackerImage ".\templates\azure-ubuntu-packer.pkr.hcl" -VarFile ".\packer.ubuntu2204.pkolosov.vars.json"
+- .\Packer-Build.ps1 -PackerImage ".\templates\azure-ubuntu-packer.pkr.hcl" -VarFile ".\packer.ubuntu2204.osds.vars.json"
 
 ### Test Image
 
