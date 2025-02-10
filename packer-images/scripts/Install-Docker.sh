@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 set -e  # Exit immediately if any command fails
 set -o pipefail  # Exit if any command in a pipeline fails
