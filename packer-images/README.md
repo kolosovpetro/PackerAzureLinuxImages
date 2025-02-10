@@ -1,6 +1,6 @@
 # Packer Azure Image Builder
 
-This repository contains a Packer template to build a custom Windows Server 2022 image on Microsoft Azure.
+This repository contains a Packer template to build a custom Ubuntu Server image for Microsoft Azure VMs.
 
 ## Prerequisites
 
@@ -24,7 +24,6 @@ This repository contains a Packer template to build a custom Windows Server 2022
 
 ### Test Image
 
-- From the root folder `windows-2019`
 - `terraform init`
 - `terraform plan`
 - `terraform apply`
