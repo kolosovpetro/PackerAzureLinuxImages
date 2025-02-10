@@ -8,12 +8,10 @@ Packer image for Ubuntu 22.04 in Azure
 ## Installed software V1
 
 - upgrade system packages
-- terraform
-- helm
-- kubectl
 - ansible
 - ansible azure collection
 - docker
+- nginx
 - prometheus node exporter
 - python
 - unzip
