@@ -8,3 +8,5 @@
 *.tfstate.backup
 # Ignore var files for packer
 packer.ubuntu2204.*
+id_rsa.pub
+id_rsa

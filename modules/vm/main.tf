@@ -6,8 +6,8 @@ resource "azurerm_public_ip" "public" {
 }
 
 data "azurerm_image" "search" {
-  name                = var.storage_image_reference_sku
-  resource_group_name = var.image_resource_group_name
+  name                = var.custom_image_sku
+  resource_group_name = var.custom_image_resource_group_name
 }
 
 resource "azurerm_virtual_machine" "public" {
@@ -51,4 +51,22 @@ resource "azurerm_virtual_machine" "public" {
   depends_on = [
     azurerm_network_interface_security_group_association.public
   ]
+}
+
+resource "azurerm_network_interface" "public" {
+  name                = var.network_interface_name
+  location            = var.resource_group_location
+  resource_group_name = var.resource_group_name
+
+  ip_configuration {
+    name                          = var.ip_configuration_name
+    subnet_id                     = var.subnet_id
+    private_ip_address_allocation = "Dynamic"
+    public_ip_address_id          = azurerm_public_ip.public.id
+  }
+}
+
+resource "azurerm_network_interface_security_group_association" "public" {
+  network_interface_id      = azurerm_network_interface.public.id
+  network_security_group_id = var.network_security_group_id
 }
