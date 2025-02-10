@@ -14,8 +14,8 @@ sudo pip3 install --upgrade pip
 
 echo "Installing Ansible Azure Collection dependencies..."
 curl -O https://raw.githubusercontent.com/ansible-collections/azure/refs/heads/dev/requirements.txt  # Use 'main' branch for stable releases
-pip3 install --upgrade -r requirements-azure.txt
-rm requirements-azure.txt
+pip3 install --upgrade -r requirements.txt
+rm requirements.txt
 
 echo "Installing Ansible Azure Collection..."
 ansible-galaxy collection install azure.azcollection --force
