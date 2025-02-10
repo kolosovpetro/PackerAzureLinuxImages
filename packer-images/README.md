@@ -1,26 +1,19 @@
-# Packer Azure Ubuntu Image
+# Packer Azure Image Builder
 
 This repository contains a Packer template to build a custom Ubuntu Server image for Microsoft Azure VMs.
 
-- Canonical images on Azure: https://documentation.ubuntu.com/azure/en/latest/azure-how-to/instances/find-ubuntu-images/
-- List canonical images CLI: `az vm image list -p Canonical --all -o table`
+## Prerequisites
 
-## Installed software V1
+- Packer installed (https://developer.hashicorp.com/packer/downloads)
+- Azure CLI installed and authenticated (`az login`)
+- Service principal with necessary permissions
 
-- upgrade system packages
-- ansible
-- ansible azure collection
-- docker
-- nginx
-- prometheus node exporter
-- python
-- unzip
-- zip
-- tar
-- jq
-- htop
-- net-tools
-- software-properties-common
+## Setup & Build
+
+### Authenticate to Azure
+
+- az login
+- az account set --subscription <subscription-id>
 
 ### Build image (Run from the folder where `versions.hcl` file located)
 

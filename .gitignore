@@ -1,10 +1,12 @@
 .idea
 .ssh
-*.conf
+*.sas.conf
 .terraform
 *.tfplan
 *.tfstate
 *.lock.info
 *.tfstate.backup
-*.lock.hcl
-*.variables.json
+# Ignore var files for packer
+packer.ubuntu2204.*
+id_rsa.pub
+id_rsa

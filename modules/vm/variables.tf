@@ -38,26 +38,6 @@ variable "vm_size" {
   description = "The size of the virtual machine."
 }
 
-variable "storage_image_reference_publisher" {
-  type        = string
-  description = "The publisher of the image used to create the virtual machine."
-}
-
-variable "storage_image_reference_offer" {
-  type        = string
-  description = "Specifies the offer of the platform image or marketplace image used to create the virtual machine."
-}
-
-variable "storage_image_reference_sku" {
-  type        = string
-  description = "Specifies the SKU of the platform image or marketplace image used to create the virtual machine."
-}
-
-variable "storage_image_reference_version" {
-  type        = string
-  description = "Specifies the version of the platform image or marketplace image used to create the virtual machine."
-}
-
 variable "storage_os_disk_name" {
   type        = string
   description = "The name of the OS disk."
@@ -88,17 +68,23 @@ variable "os_profile_admin_username" {
   description = "Specifies the name of the administrator account."
 }
 
-variable "os_profile_admin_public_key_path" {
+variable "os_profile_admin_public_key" {
   type        = string
   description = "Specifies the path to the public key file."
 }
 
-variable "nsg_name" {
+variable "custom_image_sku" {
   type        = string
-  description = "Name of the network security group"
+  description = "The ID of the custom image to be used for virtual machine deployment."
 }
 
-variable "image_resource_group_name" {
+variable "custom_image_resource_group_name" {
   type        = string
-  description = "Name of the resource group where the image is located"
+  description = "The name of the resource group where the custom image is stored."
 }
+
+variable "network_security_group_id" {
+  type        = string
+  description = "The ID of the network security group (NSG) to be associated with the network interface. Defaults to an empty string if not provided."
+}
+
