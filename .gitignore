@@ -1,11 +1,10 @@
 .idea
 .ssh
+*.sas.conf
 .terraform
 *.tfplan
 *.tfstate
 *.lock.info
 *.tfstate.backup
-azure.sas.conf
-*.txt
-id_rsa
-id_rsa.pub
+# Ignore var files for packer
+packer.ubuntu2204.*
