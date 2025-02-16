@@ -22,6 +22,13 @@ This repository contains a Packer template to build a custom Ubuntu Server image
 - net-tools
 - software-properties-common
 
+## Installed software V2
+
+- V1 excluding nginx, azure ansible collection
+- kubeadm
+- kubectl
+- kubelet
+
 ## Example of use
 
 ```hcl
