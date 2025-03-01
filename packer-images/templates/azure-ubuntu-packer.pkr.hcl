@@ -71,7 +71,7 @@ build {
       "./scripts/Install-Ansible-Azure-Collection.sh",
       "./scripts/Install-Dev-Essetinal-Software.sh",
       "./scripts/Install-Docker.sh",
-      "./scripts/Install-Linux-Node-Exporter.sh",
+      "./scripts/Install-Linux-Prometheus-Node-Exporter.sh",
       "./scripts/Validate-Image-Integrity.sh",
       "./scripts/Execute-Sysprep.sh"
     ]
