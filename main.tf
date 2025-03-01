@@ -44,7 +44,7 @@ module "virtual_machine" {
   subnet_id                         = azurerm_subnet.internal.id
   vm_name                           = "vm-ubuntu-${var.prefix}"
   vm_size                           = var.vm_size
-  custom_image_sku                  = "ubuntu2204-v1"
+  custom_image_sku                  = "ubuntu2204-v3"
   custom_image_resource_group_name  = "rg-packer-images-linux"
   network_security_group_id         = azurerm_network_security_group.public.id
 }
