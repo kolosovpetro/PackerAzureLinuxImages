@@ -64,14 +64,14 @@ build {
   provisioner "shell" {
     scripts = [
       "./scripts/Upgrade-System-Packages.sh",
-      "./scripts/Install-Python.sh",
       "./scripts/Install-Nginx.sh",
+      "./scripts/Install-Python.sh",
       "./scripts/Install-Certbot.sh",
       "./scripts/Install-Ansible.sh",
-      "./scripts/Install-Ansible-Azure-Collection.sh",
       "./scripts/Install-Dev-Essetinal-Software.sh",
       "./scripts/Install-Docker.sh",
-      "./scripts/Install-Linux-Prometheus-Node-Exporter.sh",
+      "./scripts/Install-Linux-Prometheus-Server.sh",
+      "./scripts/Install-Grafana.sh",
       "./scripts/Validate-Image-Integrity.sh",
       "./scripts/Execute-Sysprep.sh"
     ]

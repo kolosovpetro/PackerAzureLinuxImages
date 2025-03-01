@@ -21,26 +21,43 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 - Remove example sas token
 - Update readme
 
-### Installed software V1
+## Installed software V1
 
-- upgrade system packages
-- ansible
-- ansible azure collection
-- docker
-- nginx
-- prometheus node exporter
-- python
-- unzip
-- zip
-- tar
-- jq
-- htop
-- net-tools
-- software-properties-common
+- ./scripts/Upgrade-System-Packages.sh
+- ./scripts/Install-Python.sh
+- ./scripts/Install-Nginx.sh
+- ./scripts/Install-Certbot.sh
+- ./scripts/Install-Ansible.sh
+- ./scripts/Install-Ansible-Azure-Collection.sh
+- ./scripts/Install-Dev-Essetinal-Software.sh
+- ./scripts/Install-Docker.sh
+- ./scripts/Install-Linux-Prometheus-Node-Exporter.sh
+- ./scripts/Validate-Image-Integrity.sh
+- ./scripts/Execute-Sysprep.sh
 
-### Installed software V2
+## Installed software V2
 
-- V1 excluding nginx, azure ansible collection
-- kubeadm
-- kubectl
-- kubelet
+- ./scripts/Upgrade-System-Packages.sh
+- ./scripts/Install-Python.sh
+- ./scripts/Install-Certbot.sh
+- ./scripts/Install-Ansible.sh
+- ./scripts/Install-Dev-Essetinal-Software.sh
+- ./scripts/Install-Docker.sh
+- ./scripts/Install-Kubectl-Kubeadm-Kubelet.sh
+- ./scripts/Install-Linux-Prometheus-Node-Exporter.sh
+- ./scripts/Validate-Image-Integrity.sh
+- ./scripts/Execute-Sysprep.sh
+
+## Installed software V3
+
+- ./scripts/Upgrade-System-Packages.sh
+- ./scripts/Install-Nginx.sh
+- ./scripts/Install-Python.sh
+- ./scripts/Install-Certbot.sh
+- ./scripts/Install-Ansible.sh
+- ./scripts/Install-Dev-Essetinal-Software.sh
+- ./scripts/Install-Docker.sh
+- ./scripts/Install-Linux-Prometheus-Server.sh
+- ./scripts/Install-Install-Grafana.sh
+- ./scripts/Validate-Image-Integrity.sh
+- ./scripts/Execute-Sysprep.sh
