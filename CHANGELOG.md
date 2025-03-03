@@ -61,3 +61,20 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 - ./scripts/Install-Install-Grafana.sh
 - ./scripts/Validate-Image-Integrity.sh
 - ./scripts/Execute-Sysprep.sh
+
+## Installed software V4
+
+- ./scripts/Upgrade-System-Packages.sh
+- ./scripts/Install-Nginx.sh
+- ./scripts/Install-Python.sh
+- ./scripts/Install-Certbot.sh
+- ./scripts/Install-Ansible.sh
+- ./scripts/Install-Dev-Essetinal-Software.sh
+- ./scripts/Install-Docker.sh
+- ./scripts/Install-Linux-Prometheus-Server.sh
+- ./scripts/Install-Kubectl-Kubeadm-Kubelet.sh
+- ./scripts/Install-Grafana.sh
+- ./scripts/Install-Stress-Ng.sh
+- ./scripts/Install-Fio.sh
+- ./scripts/Validate-Image-Integrity.sh
+- ./scripts/Execute-Sysprep.sh
