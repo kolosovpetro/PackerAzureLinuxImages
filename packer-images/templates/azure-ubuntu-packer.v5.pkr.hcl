@@ -35,7 +35,7 @@ variable "vm-size" {
 
 variable "image-name" {
   type    = string
-  default = "ubuntu2204-v1"
+  default = "ubuntu2204-v5"
 }
 
 variable "image-sku" {
