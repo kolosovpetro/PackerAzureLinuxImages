@@ -29,6 +29,8 @@ This repository contains a Packer template to build a custom Ubuntu Server image
 - .\Packer-Build.ps1 -PackerImage ".\templates\azure-ubuntu-packer.v4.pkr.hcl" -VarFile ".\packer.ubuntu2204.pkolosov.vars.json"
 - .\Packer-Build.ps1 -PackerImage ".\templates\azure-ubuntu-packer.v5.pkr.hcl" -VarFile ".\packer.ubuntu2204.osds.vars.json"
 - .\Packer-Build.ps1 -PackerImage ".\templates\azure-ubuntu-packer.v5.pkr.hcl" -VarFile ".\packer.ubuntu2204.pkolosov.vars.json"
+- .\Packer-Build.ps1 -PackerImage ".\templates\azure-ubuntu-monitoring-master.pkr.hcl" -VarFile ".\packer.ubuntu2204.osds.vars.json"
+- .\Packer-Build.ps1 -PackerImage ".\templates\azure-ubuntu-monitoring-master.pkr.hcl" -VarFile ".\packer.ubuntu2204.pkolosov.vars.json"
 
 ### Test Image
 
