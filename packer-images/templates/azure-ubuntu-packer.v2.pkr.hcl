@@ -67,7 +67,7 @@ build {
       "./scripts/Install-Python.sh",
       "./scripts/Install-Certbot.sh",
       "./scripts/Install-Ansible.sh",
-      "./scripts/Install-Dev-Essetinal-Software.sh",
+      "./scripts/Install-Dev-Essential-Software.sh",
       "./scripts/Install-Docker.sh",
       "./scripts/Install-Kubectl-Kubeadm-Kubelet.sh",
       "./scripts/Install-Linux-Prometheus-Node-Exporter.sh",
