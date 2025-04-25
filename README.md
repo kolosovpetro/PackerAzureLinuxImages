@@ -39,7 +39,7 @@ module "virtual_machine" {
 - ./scripts/Install-Certbot.sh
 - ./scripts/Install-Ansible.sh
 - ./scripts/Install-Ansible-Azure-Collection.sh
-- ./scripts/Install-Dev-Essetinal-Software.sh
+- ./scripts/Install-Dev-Essential-Software.sh
 - ./scripts/Install-Docker.sh
 - ./scripts/Install-Linux-Prometheus-Node-Exporter.sh
 - ./scripts/Validate-Image-Integrity.sh
@@ -51,7 +51,7 @@ module "virtual_machine" {
 - ./scripts/Install-Python.sh
 - ./scripts/Install-Certbot.sh
 - ./scripts/Install-Ansible.sh
-- ./scripts/Install-Dev-Essetinal-Software.sh
+- ./scripts/Install-Dev-Essential-Software.sh
 - ./scripts/Install-Docker.sh
 - ./scripts/Install-Kubectl-Kubeadm-Kubelet.sh
 - ./scripts/Install-Linux-Prometheus-Node-Exporter.sh
@@ -65,7 +65,7 @@ module "virtual_machine" {
 - ./scripts/Install-Python.sh
 - ./scripts/Install-Certbot.sh
 - ./scripts/Install-Ansible.sh
-- ./scripts/Install-Dev-Essetinal-Software.sh
+- ./scripts/Install-Dev-Essential-Software.sh
 - ./scripts/Install-Docker.sh
 - ./scripts/Install-Linux-Prometheus-Server.sh
 - ./scripts/Install-Install-Grafana.sh
@@ -79,7 +79,7 @@ module "virtual_machine" {
 - ./scripts/Install-Python.sh
 - ./scripts/Install-Certbot.sh
 - ./scripts/Install-Ansible.sh
-- ./scripts/Install-Dev-Essetinal-Software.sh
+- ./scripts/Install-Dev-Essential-Software.sh
 - ./scripts/Install-Docker.sh
 - ./scripts/Install-Linux-Prometheus-Server.sh
 - ./scripts/Install-Kubectl-Kubeadm-Kubelet.sh
@@ -88,4 +88,22 @@ module "virtual_machine" {
 - ./scripts/Install-Fio.sh
 - ./scripts/Validate-Image-Integrity.sh
 - ./scripts/Execute-Sysprep.sh
+
+## Installed software V5
+
+- "./scripts/Upgrade-System-Packages.sh",
+- "./scripts/Install-Nginx.sh",
+- "./scripts/Install-Python.sh",
+- "./scripts/Install-Certbot.sh"
+- "./scripts/Install-Ansible.sh"
+- "./scripts/Install-Dev-Essential-Software.sh"
+- "./scripts/Install-Docker.sh"
+- "./scripts/Install-Linux-Prometheus-Server.sh"
+- "./scripts/Install-Linux-Prometheus-Node-Exporter.sh"
+- "./scripts/Install-Grafana.sh"
+- "./scripts/Install-Kubectl-Kubeadm-Kubelet.sh"
+- "./scripts/Install-Stress-Ng.sh"
+- "./scripts/Install-Fio.sh"
+- "./scripts/Validate-Image-Integrity.sh"
+- "./scripts/Execute-Sysprep.sh"
 

@@ -35,7 +35,7 @@ variable "vm-size" {
 
 variable "image-name" {
   type    = string
-  default = "ubuntu2204-v1"
+  default = "azure-ubuntu-monitoring-master"
 }
 
 variable "image-sku" {
@@ -69,8 +69,9 @@ build {
       "./scripts/Install-Certbot.sh",
       "./scripts/Install-Ansible.sh",
       "./scripts/Install-Dev-Essential-Software.sh",
-      "./scripts/Install-Docker.sh",
       "./scripts/Install-Linux-Prometheus-Server.sh",
+      "./scripts/Install-AlertManager.sh",
+      "./scripts/Install-AlertManager-Service.sh",
       "./scripts/Install-Grafana.sh",
       "./scripts/Validate-Image-Integrity.sh",
       "./scripts/Execute-Sysprep.sh"
