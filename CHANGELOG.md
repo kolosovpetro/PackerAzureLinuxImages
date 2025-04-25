@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning v2.0.0](https://semver.org/spec
 - Add editorconfig
 - Remove example sas token
 - Update readme
+- Monitoring images
 
 ## Installed software V1
 
